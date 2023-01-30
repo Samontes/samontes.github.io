@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arimo', sans-serif;
+  margin: 10;
+}
+
+h1 {
+  color: white;
+  text-align: center;
+  font-size: 30px;
+}
+
+h4 {
+  color: white;
+  text-align: left;
+  font-size: 15px;
+}
+
+h5 {
+  color: black;
+  text-align: left;
+  font-size: 15px;
+}
+
+ul.a {
+  list-style-position: outside;
+}
+
+/*Estilo circular foto cv */
+.circular--portrait {
+  position: static;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.circular--portrait img {
+  width: 100%;
+  height: auto;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 30px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 30%;
+  background-color: rgb(128, 151, 137);
+}
+
+/* Middle column */
+.column.middle {
+  width: 70%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+
+  .column.side,
+  .column.middle {
+    width: 100%;
+  }
+
+}
+
+/* Menu navegacion*/
+ol {
+  display: flex;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+  padding: 2px 15px;
+  background: rgb(128, 151, 137);
+  color: rgb(232, 235, 236);
+  font-weight: bold;
+}
+
+a:hover {
+  background: rgb(114, 134, 122);
+}
+
+
+main {
+  margin-top: 60px;
+}
+
+section {
+  width: 85%;
+  background: rgb(128, 151, 137);
+  position: fixed;
+  top: 0;
+  margin: 10px;
+}
+
+.item {
+  scroll-margin-top: 8ex;
+}
+
+html {
+  scroll-behavior: smooth;
+}
